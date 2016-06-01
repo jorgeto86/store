@@ -11,7 +11,7 @@ class Checkout
   def scan(item)
     product = Product.find(item)
     @items << product
-  rescue
+  rescue Product::ProductNotFound
     puts "Product dont registered!!!"
   end
 
