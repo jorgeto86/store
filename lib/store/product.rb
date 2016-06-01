@@ -31,11 +31,6 @@ class Product
   end
 
   class ProductNotFound < StandardError
-    # attr_reader :product
-
-    # def initialize(product)
-    #   @product = product
-    # end
     def message
       "Product not found"
     end
