@@ -1,0 +1,10 @@
+products:
+  VOUCHER:
+    name: Cabify Voucher
+    price: 500
+  TSHIRT:
+    name: Cabify T-Shirt
+    price: 2000
+  MUG:
+    name: Cafify Coffee Mu
+    price: 750
