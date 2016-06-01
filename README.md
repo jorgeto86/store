@@ -2,28 +2,12 @@
 Store checkout.
 
 ## Installation
-Clone repository.
+1. Clone repository from github.
+2. Install bundle: `$ gem install bundler`
+3. Run `$ bin/setup` to install dependencies.
 
 ## Usage
-##### With pry or irb
-Open pry or irb in store folder:
-```shell
-$ pry
-```
-```shell
-$ irb
-```
-In console:
-```ruby
-require 'store'
 
-pricing_rules = PricingRules.new
-co = Checkout.new(pricing_rules)
-co.scan("VOUCHER")
-co.scan("VOUCHER")
-co.scan("TSHIRT")
-price = co.total
-```
 ##### With bin/console
 Open bin/console
 ```shell
@@ -31,6 +15,23 @@ $ bin/console
 ```
 In console:
 ```ruby
+pricing_rules = PricingRules.new
+co = Checkout.new(pricing_rules)
+co.scan("VOUCHER")
+co.scan("VOUCHER")
+co.scan("TSHIRT")
+price = co.total
+```
+
+##### With pry
+Open pry console in store folder:
+```shell
+$ pry
+```
+In console:
+```ruby
+require 'store'
+
 pricing_rules = PricingRules.new
 co = Checkout.new(pricing_rules)
 co.scan("VOUCHER")
