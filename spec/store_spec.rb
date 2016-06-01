@@ -42,7 +42,7 @@ describe Checkout do
     expect(subject.total).to eq '25.00€'
   end
 
-  it "scan TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT" do
+  it "scannig TSHIRT, TSHIRT, TSHIRT, VOUCHER, TSHIRT" do
     subject.scan("TSHIRT")
     subject.scan("TSHIRT")
     subject.scan("TSHIRT")
@@ -60,7 +60,7 @@ describe Checkout do
     expect(subject.total).to eq '81.00€'
   end
 
-  it "scan VOUCHER, TSHIRT, VOUCHER, VOUCHER, MUG, TSHIRT, TSHIRT" do
+  it "scannig VOUCHER, TSHIRT, VOUCHER, VOUCHER, MUG, TSHIRT, TSHIRT" do
     subject.scan("VOUCHER")
     subject.scan("TSHIRT")
     subject.scan("VOUCHER")
